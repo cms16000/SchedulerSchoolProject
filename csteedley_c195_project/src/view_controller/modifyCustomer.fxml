@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="569.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="269.0" layoutY="32.0" text=" Modify Customer Form">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <TextField fx:id="customerId" disable="true" layoutX="409.0" layoutY="104.0" />
+        <TextField fx:id="customerName" layoutX="409.0" layoutY="156.0" />
+        <TextField fx:id="customerPostalCode" layoutX="410.0" layoutY="391.0" />
+        <TextField fx:id="customerAddress" layoutX="409.0" layoutY="206.0" />
+        <ComboBox fx:id="customerDivision" layoutX="409.0" layoutY="260.0" onMouseClicked="#refreshDiv" prefWidth="150.0" />
+        <ComboBox fx:id="customerCountry" layoutX="409.0" layoutY="327.0" prefWidth="150.0" />
+        <TextField fx:id="customerPhone" layoutX="409.0" layoutY="447.0" />
+        <Label layoutX="162.0" layoutY="103.0" text="Customer Id">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="165.0" layoutY="155.0" text="Name">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="165.0" layoutY="205.0" text="Address(123 abc street, city)">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="165.0" layoutY="259.0" text="Division">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="165.0" layoutY="326.0" text="Country">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="163.0" layoutY="390.0" text="Postal Code">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="162.0" layoutY="446.0" text="Phone">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="202.0" layoutY="510.0" mnemonicParsing="false" onMouseClicked="#saveCustomer" text="Save" />
+        <Button layoutX="442.0" layoutY="510.0" mnemonicParsing="false" onMouseClicked="#cancel" text="Cancel" />
+    </children>
+</AnchorPane>

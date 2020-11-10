@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="1052.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="loginLabel" layoutX="297.0" layoutY="127.0" text="Login Screen">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="323.0" layoutY="285.0" prefHeight="25.0" prefWidth="261.0" />
+      <Label fx:id="usernamelabel" layoutX="158.0" layoutY="284.0" text="Username:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordlabel" layoutX="161.0" layoutY="348.0" text="Password:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeLabel" layoutX="222.0" layoutY="73.0" text="Welcome, got scheduling needs? No problem, got you covered.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="enterPasswordLabel" layoutX="216.0" layoutY="219.0" text="Please enter your username and password">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="415.0" layoutY="406.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="47.0" prefWidth="80.0" text="Login" />
+      <Label fx:id="locationLabel" layoutX="58.0" layoutY="588.0" text="Location" />
+      <Label fx:id="countryLabel" layoutX="58.0" layoutY="622.0" text="default" />
+      <PasswordField fx:id="passwordField" layoutX="324.0" layoutY="349.0" prefHeight="25.0" prefWidth="261.0" />
+      <Button layoutX="942.0" layoutY="627.0" mnemonicParsing="false" onMouseClicked="#exitProgram" text="exit" />
+   </children>
+</AnchorPane>
